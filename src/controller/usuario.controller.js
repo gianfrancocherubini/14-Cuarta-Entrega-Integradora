@@ -135,41 +135,6 @@ export class UsuarioController {
         });
     }
 
-    // static async uploadProfile(req, res) {
-    //     try {
-    //         profileUpload.single('profileImage')(req, res, async function (err) {
-    //             if (err) {
-    //                 console.error('Error al cargar el archivo:', err);
-    //                 return res.status(500).json({ error: 'Error interno del servidor.' });
-    //             }
-    
-    //             const fileName = req.file.filename;
-    //             res.status(200).json({ message: 'Archivo de perfil cargado exitosamente.', fileName });
-    //         });
-    //     } catch (error) {
-    //         console.error('Error al cargar el archivo de perfil:', error);
-    //         res.status(500).json({ error: 'Error interno del servidor.' });
-    //     }
-    // }
-    
-
-    // static async uploadProductImage(req, res) {
-    //     try {
-    //         productUpload.single('productImage')(req, res, async function (err) {
-    //             if (err) {
-    //                 console.error('Error al cargar el archivo:', err);
-    //                 return res.status(500).json({ error: 'Error interno del servidor.' });
-    //             }
-    
-    //             const fileName = req.file.filename;
-    //             res.status(200).json({ message: 'Archivo de producto cargado exitosamente.', fileName });
-    //         });
-    //     } catch (error) {
-    //         console.error('Error al cargar el archivo de producto:', error);
-    //         res.status(500).json({ error: 'Error interno del servidor.' });
-    //     }
-    // }
-
     static async renderRecuperoPassword(req,res){
         let {error, mensaje} =req.query;
         let usuario = req.session.usuario;
